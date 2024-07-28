@@ -1,0 +1,167 @@
+{
+	"compiler": {
+		"version": "0.7.5+commit.eb77ed08"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "buyAndStakeSnowBank",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenIn",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_tokenOut",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenInAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "getEstimatedTokenForTokenWithSlippage",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_ownerAddress",
+						"type": "address"
+					}
+				],
+				"name": "getTokenBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenAddress",
+						"type": "address"
+					}
+				],
+				"name": "withdrawTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SnowBank.sol": "BuyAndStakeSnowbank"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SnowBank.sol": {
+			"keccak256": "0x6ce511f4fb90a75e630714df9e537aa79e9f2038c3cc2cda19a2994cac1b0c0f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fa9239b49e735bf51446377f4e03b1d4ceb188a514316d5f06b34a32c343f6df",
+				"dweb:/ipfs/Qmb4mwJfRRjy1EJ51LRVnqU3S5UYfGwHrqB52rWxZnWRhn"
+			]
+		},
+		"https://github.com/traderjoe-xyz/joe-core/blob/main/contracts/traderjoe/interfaces/IERC20.sol": {
+			"keccak256": "0xd5d59683ac059dc8c7a528d9243a0434d727bcddd4e477d4b26d50ae4f78ea05",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://fb105d0ee59cde6cc698dd03079f3aa82297e6d2e55fb8dd1ac93cb1a025277c",
+				"dweb:/ipfs/QmRW6x7oYdwdQMWuLvLX43Cex8B47AJHJEGVFzPWBL5UWP"
+			]
+		},
+		"https://github.com/traderjoe-xyz/joe-core/blob/main/contracts/traderjoe/interfaces/IJoeERC20.sol": {
+			"keccak256": "0x0f9b1de8137e61afcf2c09fde27dc657da98b7c19c1811fd205ffbe877490d36",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://92ac4932b09ccd2238cdf166596938d69edf754201c390995d9c19edc7d56aa2",
+				"dweb:/ipfs/Qmf6baKpxCo1Yyhaw2iQjfn4xCYpxZ9wS6u8xK5UC9Z5vw"
+			]
+		},
+		"https://github.com/traderjoe-xyz/joe-core/blob/main/contracts/traderjoe/interfaces/IJoeFactory.sol": {
+			"keccak256": "0x0e31007ead341ae106c1ca874629b527886427f7f47641d96e0d172720f2c3ca",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://7ff392e00b6eeb6abdcec2bc1038faef7512a6544a75a561723a88cd7953d906",
+				"dweb:/ipfs/QmdhxFCHMXjdrxFWYJpQgab3TsreaJXcj5EvvPjvRBwDbR"
+			]
+		},
+		"https://github.com/traderjoe-xyz/joe-core/blob/main/contracts/traderjoe/interfaces/IJoePair.sol": {
+			"keccak256": "0xd4d926f79ca1de45dc3f8a7e8244d62a54522cb1a3f38d881979319363ee1387",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://6dea420b35ba95ebb12640a81cbf10f46bcaaa6d47ca8154f31644772847098e",
+				"dweb:/ipfs/QmbtQ4jQaZJuQqSBWy12BY1wP3gvdLbatYDpTtHgFLtezf"
+			]
+		},
+		"https://github.com/traderjoe-xyz/joe-core/blob/main/contracts/traderjoe/interfaces/IJoeRouter01.sol": {
+			"keccak256": "0xa895450e9848e9d709465163c3ba0e730bd71bcf22c0ec568d9c582f0873844e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://fcf45e2f2273ede6134c332a2c936967fc2d2b4894ee3796dc7fc5d9582a025c",
+				"dweb:/ipfs/QmcRXczCZaH2QFdKmDCwpMmQdPpnfrcFnWtfmQrfkpYtqD"
+			]
+		},
+		"https://github.com/traderjoe-xyz/joe-core/blob/main/contracts/traderjoe/interfaces/IJoeRouter02.sol": {
+			"keccak256": "0xe0bea03fe60c0b819d5070049bac4b93650083aba173ccd1fa3c3ce665bf43ca",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://011999d25466b2198cc24365dd96fccf6a2a2da9e8c6dae11f6b070144fe3915",
+				"dweb:/ipfs/QmXHrrp1k6nxuqd1CT6oTbYK21krGbst4E8MbfV2PxgaZL"
+			]
+		}
+	},
+	"version": 1
+}
